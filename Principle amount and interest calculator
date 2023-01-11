@@ -1,0 +1,15 @@
+amount = int(input("Enter the amount needed : "))
+age = int(input("Enter your age : "))
+yrs = int(input("Enter the number of years : "))
+if age > 60:
+    interest = 12
+else:
+    interest = 10
+interest_amount = ((amount*yrs*interest)/100)
+sum_amt = amount + interest_amount
+print("Principle amount : ", amount)
+print("No.of.years : ", yrs)
+print("Rate of interest : ", interest)
+print("Interest amount : ", interest_amount)
+print("Total sum of amount : ", sum_amt)
+print("Monthly EMI : ", sum_amt / (yrs*12))
