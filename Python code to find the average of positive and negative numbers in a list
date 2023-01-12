@@ -1,0 +1,21 @@
+I = []
+num = int(input("Enter a total number of elements : "))
+for i in range(num):
+    element = int(input("Enter a positive or negative value : "))
+    I.append(element)
+print("The entered list is", I)
+positive = 0
+negative = 0
+avr_pos = []
+avr_neg = []
+for i in I:
+    if i >= 0:
+        positive+=1
+        avr_pos.append(i)
+    else:
+        negative+=1
+        avr_neg.append(i)
+avr_sum1 = sum(avr_pos)/positive
+avr_sum2 = sum(avr_neg)/negative
+print("Average of positive numbers is", avr_sum1)
+print("Average of negative numbers is", avr_sum2)
