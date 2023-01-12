@@ -1,0 +1,6 @@
+string = input("Enter a string : ")
+str = ""
+for i in string:
+    str = i+str
+print("Entered string : ", string)
+print("Mirror string : ", str)
