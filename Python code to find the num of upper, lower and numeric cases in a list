@@ -1,0 +1,21 @@
+I = []
+num = int(input(("Enter the number of elements : ")))
+for i in range(num):
+    element = input("Enter a element : ")
+    I.append(element)
+print("The list of elements is", I)
+lower = 0
+upper = 0
+numeric = 0
+for i in I:
+    if i == '*':
+        break
+    elif i.islower():
+        lower = lower + 1
+    elif i.isupper():
+        upper = upper + 1
+    elif i.isnumeric():
+        numeric = numeric + 1
+print("The number of uppercase elements is", upper)
+print("The number of lowercase elements is", lower)
+print("The number of numeric elements is", numeric)
