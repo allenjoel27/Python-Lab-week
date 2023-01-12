@@ -1,0 +1,17 @@
+I = []
+E = int(input("Enter the total no.of.elements : "))
+for i in range(E):
+    elements = int(input("Enter a value for a element : "))
+    I.append(elements)
+sort = sorted(I)
+print("The entered list is", I)
+print("The sorted list is", sort)
+nth = int(input("Enter the nth maximum value : "))
+mth = int(input("Enter the mth maximum value : "))
+max_1 = sort[-nth]
+max_2 = sort[-mth]
+print("The nth maximum value in the list is", max_1)
+print("The nth maximum value in the list is", max_2)
+sum = max_1 + max_2
+dif = max_1 - max_2
+print("The sum of nth and mth is", sum, "The difference of nth and mth is", dif)
