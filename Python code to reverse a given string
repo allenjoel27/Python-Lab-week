@@ -1,0 +1,5 @@
+string = input("Enter a string : ")
+str = " "
+for i in string:
+   str = i+str
+print("The reverse of the string is : ", str)
