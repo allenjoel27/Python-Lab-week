@@ -1,0 +1,15 @@
+sentence_1 = input("Enter a sentence: ")
+sentence_2 = input("Enter a sentence: ")
+sentence_3 = input("Enter a sentence: ")
+
+words_1 = sentence_1.split()
+words_2 = sentence_2.split()
+words_3 = sentence_3.split()
+
+length_1 = len(words_1)
+length_2 = len(words_2)
+length_3 = len(words_3)
+
+total = (length_1,length_2,length_3)
+
+print("The highest number of words in a sentence:", max(total))
