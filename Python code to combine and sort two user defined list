@@ -1,0 +1,18 @@
+l1 = []
+n1 = int(input("Enter the range of elements : "))
+for i in range(n1):
+   element1 = int(input("Enter a element : "))
+   l1.append(element1)
+print(l1)
+
+l2 = []
+n2 = int(input("Enter the range of elements : "))
+for i in range(n2):
+   element2 = int(input("Enter a element : "))
+   l2.append(element2)
+print(l2)
+
+comb = l1 + l2
+accend = sorted(comb)
+
+print(accend)
