@@ -1,0 +1,11 @@
+P_amt = int(input("Enter the principal amount : "))
+N_yrs = int(input("Enter the no.of.years : "))
+Senior = input("Are you a senior citizen (y/n) : ")
+Interest_1 = 12
+Interest_2 = 10
+if Senior == "n":
+    rate = (P_amt * N_yrs * Interest_1) / 100
+elif Senior == "y":
+    rate = (P_amt * N_yrs * Interest_2) / 100
+print("The Interest amount is :", rate)
+print("The total amount of including interest :", rate + P_amt)
