@@ -1,0 +1,19 @@
+l = []
+n = int(input("Enter range of list : "))
+for i in range(n):
+    elements = int(input("Enter the list of elements : "))
+    l.append(elements)
+print(l)
+def sumsquares(l):
+    odd = []
+    even = []
+    for i in l:
+        if i%2==0:
+            even.append(i)
+        else:
+            odd.append(i)
+    sum_odd = sum(odd)
+    sum_even = sum(even)
+    sum_1 = [sum_odd,sum_even]
+    print(sum_1)
+sumsquares(l)
